@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Summary about any person,place,company etc...">
+  <meta name="keywords" content="wikipedia,summary,pocketpedia">
+  <meta name="author" content="Nandalala">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>{{ title }}</title>
+</head>
+<body>
+<center>
+<h3>Pocket Pedia:</h3>
+(<i style="color: #1a75ff;">Beta Version</i>)
+</center>
+<br>
+<div>
+	<center>
+		<form action='/result' method="post">
+			<table>
+				<tr>
+					<td>
+						<i><label for='srh'>Search:</label></i>
+						<input type="search" name="search" id='srh' required placeholder="E.g dhoni,messi,bruce lee...">
+					</td>
+					<td>
+						<select name='lang'>
+							<option value="en" selected>English</option>
+							<option value="hi">Hindi</option>	
+						</select>
+					</td>
+				</tr>
+					
+			</table>
+			<br>
+			<input type="submit" name="submit" value="search">
+		</form>
+	</center>
+</div>
+</body>
+</html>
