@@ -9,15 +9,25 @@
 	<title>{{title}}</title>
 </head>
 <body>
+	
 <center>
-<h3>{{ title }}:</h3>
+<h3><i>{{ title }}:</i></h3>
+</center>
 <div>
 	<article>
-		<p>{{ summary }}</p>
+		<p><i>{{ summary }}</i></p>
 	</article>
+	<i><b>View full artice about </b><a href='{{fullink}}'> {{title}}</a><i>
+	<br>
+	<form action="/related_search" method="post">
+	<i><strong>View more related to </strong> <a href="{{url_for('related_srh')}}"><input type="submit" name="sub" value="{{title}}"></a></i>
+	
+	</form>
+	<br>
+	<div align='right'>
+		<input type="button" name="print" onclick='window.print()' value="print this page">
+	</div>
 </div>
-<br>
-</center>
 
 </body>
 </html>
