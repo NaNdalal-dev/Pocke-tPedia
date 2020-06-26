@@ -10,8 +10,7 @@
 </head>
 <body>
 <center>
-<h3>Pocket Pedia:</h3>
-(<i style="color: #1a75ff;">Beta Version</i>)
+<h3 style="color: #1a75ff;">Pocket Pedia:</h3>
 </center>
 <br>
 <div>
@@ -20,13 +19,18 @@
 			<table>
 				<tr>
 					<td>
-						<i><label for='srh'>Search:</label></i>
-						<input type="search" name="search" id='srh' required placeholder="E.g dhoni,messi,bruce lee...">
+						<i><label style="color: #1a75ff;" for='srh'>Search:</label></i>
+						<input type="search" name="search" id='srh' required placeholder="E.g dhoni,google,eminem...">
 					</td>
 					<td>
 						<select name='lang'>
 							<option value="en" selected>English</option>
-							<option value="hi">Hindi</option>	
+							<option value="hi">हिन्दी</option>	
+							<option value='ta'>Tamil</option>
+							<option value="ur">اردو(urdu)</option>
+							<option value="el">Ελληνικά(greek)</option>
+							<option value="ar">العربية(arabic)</option>
+							<option value="ru">Русский(russian)</option>
 						</select>
 					</td>
 				</tr>
@@ -35,6 +39,12 @@
 			<br>
 			<input type="submit" name="submit" value="search">
 		</form>
+	</center>
+</div>
+<br>
+<div>
+	<center>
+<a href='https://github.com/NaNdalal-dev/Pocket-Pedia'>	<img src="{{ url_for('static', filename='gitlogo.png') }}" width="60" height="60"></a>
 	</center>
 </div>
 </body>
